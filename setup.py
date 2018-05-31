@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fidding-cli',
-    version='0.4',
+    version='0.7',
     description='A python cli project',
     url='https://github.com/fidding/python-cli.git',
     packages=find_packages(),
@@ -14,6 +14,8 @@ setup(
     install_requires=[
         'Click',
     ],
+    # package_dir={'': 'lib'},
+    # data_files=[],
     entry_points='''
         [console_scripts]
         fidding-cli=python_cli.script.cli:cli
